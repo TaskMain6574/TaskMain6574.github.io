@@ -1,0 +1,6 @@
+<li><a href="/">Home</a></li>
+<li><a href="/team.html">Team</a></li>
+<li><a href="/robot.html">Meet The Robot</a></li>
+<li><a href="/designs.html">Designs</a></li>
+<li><a href="https://blog.taskmain.tk/">Enginering Notebook</a></li>
+<li><a href="https://blog.taskmain.tk/"></a></li>

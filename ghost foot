@@ -1,0 +1,7 @@
+        <script>
+    $('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+     $('#navinput').load("http://taskmain.tk/nav.txt");
+    </script>

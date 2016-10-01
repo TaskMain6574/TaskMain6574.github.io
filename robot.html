@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="taskmain, 6574, taskmain6574, taskmainteam, taskmain6574team, teamtaskmain">
+<meta name="description" content="Taskmain6574 is a robotics team for Lynbrook highschool that competes in First robotics competitions.">
+<meta name='subject' content="Robtics">
+<meta name="url" content="http://www.taskmain.tk/robot.html">
+<title>Taskmain - Robot</title>
+<link rel="stylesheet" href="style.css">
+            <link href='/assets/css/fullcalendar.css' rel='stylesheet' />
+<link href='assets/css/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='/assets/js/moment.min.js'></script>
+ <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src='/assets/js/fullcalc.min.js'></script>
+<script src='/assets/js/gcalc.js'></script>
+    
+</head>
+<body>
+<nav class="DesktopNav">
+    <div class="nav">
+    <a href="/"><img class="logo" src="/assets/imgs/taskmainlogo.png" width="200px"></a>
+ 
+    </div>
+
+    </nav>
+    
+<div class="button_container" id="toggle">
+  <span class="top"></span>
+  <span class="middle"></span>
+  <span class="bottom"></span>
+</div>
+
+<div class="overlay" id="overlay">
+  <nav class="overlay-menu">
+    <ul id="navinput">
+    </ul>
+  </nav>
+</div>
+    <!--Nav Load-->
+    <script>
+ $('#navinput').load("nav.txt");
+    </script>
+
+    <div class="pagecontent"><br><br><br><br>
+        <h1>Meet our Robot</h1>
+        <p>SITE COMING SOON</p>
+
+        
+    </div>
+    
+    
+<!--<div class="post">
+<h1>First Post!</h1>
+<p class="timestamp">03.25.2016, 11:03 PM</p>
+<p>This is the first post of my new blog!</p>
+</div>-->
+       <script>$('body').load("coming.txt");</script>
+    <script>
+    $('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+    </script>
+    
+
+    <!--<script>
+        $('#read').readmore({
+  speed: 75,
+  maxHeight: 100
+});</script>-->
+    <!--calander-->
+    
+    
+</body>
+</html>

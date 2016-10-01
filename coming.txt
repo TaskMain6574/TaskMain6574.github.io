@@ -1,0 +1,41 @@
+<div class="comingsoon">
+<nav class="DesktopNav">
+    <div class="nav">
+    <a href="/"><img class="logo" src="/assets/imgs/taskmainlogo.png" width="200px"></a>
+ 
+    </div>
+
+    </nav>
+    
+<div class="button_container" id="toggle">
+  <span class="top"></span>
+  <span class="middle"></span>
+  <span class="bottom"></span>
+</div>
+
+<div class="overlay" id="overlay">
+  <nav class="overlay-menu">
+    <ul id="navinput">
+
+    </ul>
+  </nav>
+</div>
+
+
+<br><br><br>
+<h1 class="c2435">Comeing Soon</h1>
+<br>
+<p class="c2435">This website is coming soon!!</p><br>
+<div class="c2435"><a href="/index.html" class="c2435">HOME</a><br><br>
+<a href="https://blog.taskmain.tk/" class="c2435">BLOG</a>
+</div>
+
+<script src="/assets/js/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script>
+    $('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+  $('#navinput').load("nav.txt");
+</script>
+</div>
