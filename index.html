@@ -13,7 +13,7 @@
             <link href='/assets/css/fullcalendar.css' rel='stylesheet' />
 <link href='assets/css/fullcalendar.print.css' rel='stylesheet' media='print' />
 <script src='/assets/js/moment.min.js'></script>
- <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+ <script src="//code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script src='/assets/js/fullcalc.min.js'></script>
 <script src='/assets/js/gcalc.js'></script>
     
@@ -52,7 +52,19 @@
     <script>
  $('#navinput').load("nav.txt");
     </script>
-
+<div class="https" id="nohttps" style="display:none;">
+    We recoment that you use https for a secure connection. <div class="httpsleft"><a href="#" class="httpsnope" id="httpsno">no, thanks</a> <a class="httpsok" id="httpsok">ok</a></div>
+    <script>document.getElementById("httpsok").onclick = function(){
+            var restOfUrl = window.location.href.substr(5);
+        window.location = "https:" + restOfUrl;
+        };
+        document.getElementById("httpsno").onclick = function(){
+$("#nohttps").hide();}
+    </script>
+</div>
+<script>if (location.protocol === 'http:') {$( ".https" ).show();}</script>
+    
+    
     <div class="pagecontent"><br><br><br><br>
         <div class="text">
         <h1>Hello, and Welcome!!</h1>
@@ -169,6 +181,6 @@
 	});
 
 </script>
-    
+
 </body>
 </html>
